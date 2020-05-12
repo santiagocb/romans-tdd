@@ -1,0 +1,12 @@
+<div>
+  <h1>
+    Conversor de números arábicos a romanos
+  </h1>
+  <input type="number" [(ngModel)]="arabicNumber" (input)="onChange()" />
+  <span *ngIf="arabicNumber <= 0 || arabicNumber > 1000">
+    Válidos números entre 1 y 1000
+  </span>
+  <div>
+    <h2>Número romano: {{ romanNumber }}</h2>
+  </div>
+</div>
